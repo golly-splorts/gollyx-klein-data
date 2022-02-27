@@ -503,7 +503,7 @@ for iseason in range(LAST_SEASON0 + 1):
 
     kcslen = len(postseason["KCS"])
     if kcslen > 7 or kcslen < 4:
-        raise Exception(f"Error: postseason HCS length is invalid: {kcslen} games")
+        raise Exception(f"Error: postseason KCS length is invalid: {kcslen} games")
 
     # postseason.json must have fewer teams than postseason.json
     if len(postseason_team_names) >= len(teams):
